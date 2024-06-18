@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="helper-v2.js" defer=""></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         td {
             text-align: right;
@@ -45,6 +46,31 @@
             border-top: 1px solid lightgrey;
             /* Use light gray color for the border */
         }
+        .button-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+        .button {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .button img {
+            margin-right: 10px;
+            width: 20px;
+            height: 20px;
+        }
+        .button i {
+            margin-right: 15px; /* Adjust this value to increase or decrease the gap */
+            font-size: 20px;
+        }
     </style>
 </head>
 
@@ -53,7 +79,50 @@
         <div class="text-center">
             <h1><img src="static/GAMA.png" alt="Logo" width="200" height="200"><br>GAMA: <br>A Large Audio-Language Model with Advanced Audio Understanding and Complex Reasoning Abilities</h1>
         </div>
-        <br><br>
+        <br>
+
+        <p style="line-height:1" align="center"><b>
+            <font color="000000">Sreyan Ghosh<sup>1*</sup>, Sonal Kumar<sup>1*</sup>, Ashish Seth<sup>1</sup>, Chandra Kiran Reddy Evuru<sup>1</sup></font>
+          </b></p>
+        <p style="line-height:1" align="center"><b>
+            <font color="000000">Utkarsh Tyagi<sup>1</sup>, S Sakshi<sup>1</sup>, Oriol Nieto<sup>2</sup>, Ramani Duraiswami<sup>1</sup>, Dinesh Manocha<sup>1</sup></font>
+          </b></p>
+        <p style="line-height:0.6" align="center">
+          <font color="000000"><sup>1</sup>University of Maryland, College Park, USA, <sup>2</sup>Adobe, USA</font>
+        </p>
+        <p style="line-height:0.6" align="center">
+          <font color="000000">{sreyang, sonalkum, aseth125, ckevuru}@umd.edu</font>
+        </p>
+        <p style="line-height:0.6" align="center">
+            <font color="000000">{utkarsht, ssakshi, ramanid, dmanocha}@umd.edu</font>
+          </p>
+          <p style="line-height:0.6" align="center">
+            <font color="000000">{onieto}@adobe.edu</font>
+          </p>
+        <p style="line-height:1" align="center">
+          <font color="000000"><sup>*</sup>Equal Contribution</font>
+        </p>
+
+        <div class="button-container">
+            <a href="#" class="button">
+                <i class="fas fa-file-pdf"></i> Paper
+            </a>
+            <a href="https://github.com/Sreyan88/GAMA" class="button">
+                <i class="fab fa-github"></i> Code
+            </a>
+            <a href="https://drive.google.com/file/d/1O2yBz-Z6ENlmXsnBTpYT4R3C94MLyAZS/view?usp=sharing" class="button">
+                <i class="fas fa-database"></i> Dataset
+            </a>
+            <a href="https://326e9a808b0c28063d.gradio.live" class="button">
+                <i class="fas fa-play"></i> GAMA Demo
+            </a>
+            <a href="https://92c08e835dbe471711.gradio.live" class="button">
+                <i class="fas fa-play"></i> GAMA-IT Demo
+            </a>
+
+        </div>
+
+        <br>
 
         <div>
             <p>
